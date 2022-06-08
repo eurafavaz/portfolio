@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+	scroll-behavior:smooth;
+    background-color: #9A9FFD;
+    /* border: 1px solid red; */
+}
+
+.menu {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-left {
+    margin-right: 5rem;
+    margin-left: 30rem;
+}
+
+.column-left h1 {
+    color: #272B7D;
+    font-size: small;
+    padding: 1rem 0 .4rem 0;
+    font-weight: 900;
+}
+
+.column-left h2 {
+    color: #ffffff;
+    padding: 0 0 .4rem 0;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.column-left p {
+    color: #ffffff;
+    padding: 0 0 1rem 0;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+}
+
+.column-left button {
+    background-color: #272B7D;
+    border: solid 1px #272B7D;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem 1.3rem .5rem 1.3rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.column-left button:hover {
+    background-color: #4C4F7D;
+    border: solid 1px #4C4F7D;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem 1.3rem .5rem 1.3rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.column-right img {
+    margin-right: 30rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+
