@@ -10,14 +10,14 @@
 
   <body>
     <nav>
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul id="home-screen" class="menu">
+        <li><a href="#home-screen">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <header>
+    <header class="header-container">
       <section class="presentation">
         <div class="column-left">
           <h1>ABOUT</h1>
@@ -25,19 +25,96 @@
           <p>
             Great to see you here! I'm graduated in journalism, I'm working as
             graphic designer and also I'm a web development student. Send me a
-            message and take an opportunity to talk.
+            message and give me an opportunity to talk.
           </p>
           <button>Contact</button>
         </div>
+
         <div class="column-right">
-        <img src="./img/animoji.png" alt="Animoji da Apple piscando" />
+          <img src="./img/animoji.png" alt="animoji piscando" />
         </div>
       </section>
     </header>
 
-    <footer></footer>
+    <h3 id="skills">SKILLS</h3>
+
+    <section class="skills">
+      <div style="order: 0" class="skill">
+        <img src="./img/photoshop-logo.svg" alt="adobe photoshop logo" />
+        <p>Photoshop</p>
+      </div>
+
+      <div style="order: 1" class="skill">
+        <img src="./img/illustrator-logo.svg" alt="adobe illustrator logo" />
+        <p>Illustrator</p>
+      </div>
+
+      <div style="order: 2" class="skill">
+        <img src="./img/indesign-logo.svg" alt="adobe indesign logo" />
+        <p>InDesign</p>
+      </div>
+
+      <div style="order: 3" class="skill">
+        <img src="./img/figma-logo.svg" alt="figma logo" />
+        <p>Figma</p>
+      </div>
+    </section>
+    
+    <h4>LEARNING</h4>
+
+    <section class="tecnologies">
+      <div style="order: 0" class="tecnology">
+        <img src="./img/javascript-logo.svg" alt="javascript logo" />
+        <p>JavaScript</p>
+      </div>
+
+      <div style="order: 1" class="tecnology">
+        <img src="./img/html-logo.svg" alt="html logo" />
+        <p>HTML</p>
+      </div>
+
+      <div style="order: 2" class="tecnology">
+        <img src="./img/css-logo.svg" alt="css logo" />
+        <p>CSS</p>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h5 id="contact">CONTACT ME</h5>
+
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/eurafavaz/"><img src="./img/linkedin-logo.svg" alt="linkedin logo"></a>
+        <a href="https://github.com/eurafavaz"><img src="./img/github-logo.svg" alt="linkedin logo"></a>
+      </div>
+
+      <div class="form-body">
+        <form action="#">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="name">Phone:</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="name">E-mail:</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+
+          <button id="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        <a href="https://github.com/eurafavaz" target="_blank">
+          Created by Rafael Vaz
+        </a>
+        - All Rights Reserved &copy;
+      </p>
+    </footer>
 
     <script src="./index.js"></script>
-
   </body>
 </html>

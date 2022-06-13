@@ -5,24 +5,58 @@
     padding: 0;
     font-family: Lato;
 	scroll-behavior:smooth;
-    background-color: #9A9FFD;
     /* border: 1px solid red; */
 }
 
+body {
+    background-color: #9A9FFD;
+}
+
 .menu {
-    color: #ffffff;
+    background-color: #272B7D;
+    display: flex;
+    padding: 2rem 2rem 2.5rem 2rem;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    /* position: fixed;
+	z-index: 9999; */
+}
+
+.menu a {
+    margin: 0 2rem 0 2rem;
     text-decoration: none;
+    color: #ffffff;
+}
+
+.menu a:hover {
+    margin: 0 2rem 0 2rem;
+    text-decoration: none;
+    color: #9A9FFD;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.header-container {
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    /* vertical-align: middle; --- Aqui eu queria deixar tudo no meio (considerando o 55vh desta classe) e remover a margem da coluna esquerda (57). */
 }
 
 .presentation {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .column-left {
-    margin-right: 5rem;
-    margin-left: 30rem;
+    width: 50%;
+    text-align: right;
+    padding: 1rem 2rem 1rem 1rem;
+    margin: 11rem 0 11rem 0;
 }
 
 .column-left h1 {
@@ -41,7 +75,7 @@
 
 .column-left p {
     color: #ffffff;
-    padding: 0 0 1rem 0;
+    padding: 0 0 1rem 20rem;
     line-height: 1.7rem;
     font-size: 1.1rem;
 }
@@ -55,7 +89,7 @@
     padding: .5rem 1.3rem .5rem 1.3rem;
     border-radius: 20px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .column-left button:hover {
@@ -67,13 +101,188 @@
     padding: .5rem 1.3rem .5rem 1.3rem;
     border-radius: 20px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.column-right {
+    width: 50%;
+    padding: 0 0 0 2rem;
 }
 
 .column-right img {
-    margin-right: 30rem;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    width: 150px;
 }
+
+h3 {
+    padding: 5rem 0 0 0;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    background-color: #272B7D;
+    padding: 3rem 3rem 3rem 3rem ;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #272B7D;
+    padding: 0 3rem 3rem 3rem ;
+}
+
+.skill {
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+    color: #ffffff;
+}
+
+.skill p {
+    padding: 1rem 0 0 0;
+    font-size: 20px;
+}
+
+.skills img {
+    height: 50px;
+    padding: 0 0 .5rem 0;
+}
+
+.skills div.skill {
+    width: 7rem;
+    box-shadow: 0 0 1em #00000075;
+	border-radius: 15px;
+	padding: 1.5rem;
+	margin: 3rem 0 1rem 0;
+	background-color: #4C4F7D;
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+h4 {
+    padding: 5rem 0 0 0;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    background-color: #272B7D;
+    padding: 3rem 3rem 3rem 3rem ;
+}
+
+.tecnologies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #272B7D;
+    padding: 0 3rem 3rem 3rem ;
+}
+
+.tecnology {
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+    color: #ffffff;
+}
+
+.tecnology p {
+    padding: 1rem 0 0 0;
+    font-size: 20px;
+}
+
+.tecnologies img {
+    height: 50px;
+    padding: 0 0 .5rem 0;
+}
+
+.tecnologies div.tecnology {
+    width: 7rem;
+    box-shadow: 0 0 1em #00000075;
+	border-radius: 15px;
+	padding: 1.5rem;
+	margin: 3rem 0 1rem 0;
+	background-color: #4C4F7D;
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+h5 {
+    padding: 5rem 0 3rem 0;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.form-body {
+	display: flex;
+	flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.form-body input {
+	width: 100%;
+	padding: .4rem;
+	font-size: 1rem;
+	outline: none;
+	border-radius: 5px;
+	border: solid 1px rgb(67, 67, 67);
+	margin: 0 0 .5rem 0;
+}
+
+.form-body label {
+	color: rgb(67, 67, 67);
+	font-weight: 600;
+	font-size: .9rem;
+}
+
+.form-body button {
+    background-color: #272B7D;
+    border: solid 1px #272B7D;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem 1.3rem .5rem 1.3rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-body button:hover {
+    background-color: #4C4F7D;
+    border: solid 1px #4C4F7D;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem 1.3rem .5rem 1.3rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-media img {
+    height: 30px;
+    margin: 0 .5rem 1rem .5rem;
+}
+
+footer {
+	background-color: #19181D;
+	padding: 4rem;
+	text-align: center;
+	color: #fff;
+	font-size: 1rem;
+	margin-top: 5rem;
+  }
+  
+  footer a {
+	text-decoration: none;
+	color: #fff;
+  }
+  
+  footer a:hover{
+	color: #19181D;
+  }
 
 
