@@ -5,7 +5,7 @@
     padding: 0;
     font-family: Lato;
 	scroll-behavior:smooth;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -111,6 +111,12 @@ body {
 
 .column-right img {
     width: 150px;
+}
+
+.column-right p {
+    color: #272B7D;
+    font-size: 15px;
+    padding: 1rem 0 0 1rem;
 }
 
 h3 {
@@ -287,7 +293,6 @@ footer {
 
   @media only screen and (max-width: 600px) {
     .header-container {
-        background-color: rgb(20, 217, 99);
         display: flex;
         flex-direction:column;
         height: 100%;
